@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffc0cb, #add8e6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.5);
+      transition: text-shadow 0.3s ease-in-out;
+    }
+
+    h1:hover {
+      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      margin-top: 50px;
+    }
+
+    label {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: white;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    textarea {height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: white;
+      color: #ffc0cb;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ffc0cb;
+      color: white;
+    }
+
+    .home-button {
+      background-color: white;
+      color: #ffc0cb;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 50px;
+    }
+
+    .home-button:hover {
+      background-color: #ffc0cb;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Me</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+  <button class="home-button" onclick="location.href='index.html';">Home</button>
+</body>
+</html>
